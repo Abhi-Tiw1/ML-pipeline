@@ -104,6 +104,9 @@ Outputs:
 f_names: name of all features selected in each fold  
 out_fold: performance metrics for each fold and classifier along with random voting outputs
 
+## Other functions
+Several other functions for saving the outputs in csv files are also present in the code and their use can be seen in the pipline_example.py file along with output folder.
+
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
 - [pymrmr](https://pypi.org/project/pymrmr/) 
