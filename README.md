@@ -49,7 +49,22 @@ fs_alg- Input key for selecting feature selection method. Options are:
 Outputs:  
 X_tr_fs: training matrix after feature selection  
 X_trans : test matrix after feature selection  
-mask: feature names of selected features 
+mask: feature names of selected features
+
+### Classifier selection:
+Funtion: select_clf(clfr)  
+
+Function to call classifier key (used in get_cv_out function)  
+Input:  
+clfr: Input key for classfier selection. Options are:  
+      - svm_rbf: SVM with rbf kernal  
+      - svm_lnr: SVM with linear kernal  
+      - lr: logistic regression  
+      - rf20: random forest with 20 treees  
+      - knn10: k-nearest neighbors with 10 neighbors  
+
+Output:  
+clf: selected classifier 
 
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
