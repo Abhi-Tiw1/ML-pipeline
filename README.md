@@ -18,13 +18,18 @@ function : get_sampled_data(Xsm, ysm, seed,type='over')
 Function samples the imbalabced dataset to make it balanced. To be called for the training set data 
 Inputs: 
 Xsm - features  to be sampled
+
 ysm - corrsponding labels of feature
+
 seed - random seed for sampling
+
 type - type of sampling, options are
-       - 'under' : random undersampling
-       - 'over' : random oversampling
-       - 'under_nm3' : undersampling using near miss method
-       - 'over_smote' : oversampling using smote method
+      - 'under' : random undersampling
+      - 'over' : random oversampling
+      - 'under_nm3' : undersampling using near miss method
+      - 'over_smote' : oversampling using smote method
+      
+      
 Ouputs: 
 X_rs, y_rs - resampled feature and label data
 
