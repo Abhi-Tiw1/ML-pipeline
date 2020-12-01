@@ -66,6 +66,25 @@ clfr: Input key for classfier selection. Options are:
 Output:  
 clf: selected classifier 
 
+## Performance metric calculation:
+Function: get_metrics(y_tru, y_pred,no_metrics=6)
+
+
+Funciton to get the output classification metrics (called in get_cv_out)  
+Inputs:  
+y_tru : the true output labels  
+y_pred: rhe predicted output labels  
+no_metrics: default 6, the number of output metrics   
+
+Outputs:  
+vec: returns vector with following order:   
+    - balanced accuracy,  
+    - f1-score,  
+    - matthews correlation coefficient,  
+    - precision,  
+    - recall,  
+    - cohen's kappa score, 
+
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
 - [pymrmr](https://pypi.org/project/pymrmr/) 
