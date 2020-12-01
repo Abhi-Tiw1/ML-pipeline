@@ -66,7 +66,7 @@ clfr: Input key for classfier selection. Options are:
 Output:  
 clf: selected classifier 
 
-## Performance metric calculation:
+### Performance metric calculation:
 Function: get_metrics(y_tru, y_pred,no_metrics=6)
 
 
@@ -84,6 +84,25 @@ vec: returns vector with following order:
     - precision,  
     - recall,  
     - cohen's kappa score, 
+
+### Cross validation function
+Function: get_cv_out(X,y,fs_alg,nof,feats,clfrs,samp_type,rseed)  
+
+Performs an 5 fold cross validation on the input data along with resampling (for imbalabced data) ,feature selection,
+and with different classifier and reruens the output performance metrics for each fold along with features selected.  
+Inputs:  
+X - feature matrix for full dataset  
+y - labels for full dataset  
+fs_alg - feature selection algorithm  
+nof - number of features to select  
+feats:  input feature names  
+clfrs: list of classifiers to be used  
+samp_typr: sampling strategy (for imbalabced data)  
+rseed: random seed for cross validation
+
+Outputs:  
+f_names: name of all features selected in each fold  
+out_fold: performance metrics for each fold and classifier along with random voting outputs
 
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
