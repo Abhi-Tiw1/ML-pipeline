@@ -15,10 +15,8 @@ Here is a general machine pipeline used in most of my works created using *sciki
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
 - [pymrmr](https://pypi.org/project/pymrmr/) 
-
-    $ pip install numpy Cython
-    $ pip install pymrmr
-    
 - [Imbalanced-learn](https://imbalanced-learn.org/stable/index.html)
 
-    $ pip install -U imbalanced-learn
+      $ pip install -U imbalanced-learn
+      $ pip install numpy Cython
+      $ pip install pymrmr
