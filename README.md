@@ -12,8 +12,8 @@ Here is a general machine pipeline used in most of my works created using *sciki
 - Feature importance: This can be assessed by looking at most frequenct features in the selected feature set across various cross validation folds. If a feature appreaded as one of the top features in all train-test combinations, it would be a robust feature.
 - Saving performance metrics: The performance metrics are saved for each fold along with random voting performance for each fold and can be used later for significance testing.
 
-## Handling unbalanced data: 
-function : get_sampled_data(Xsm, ysm, seed,type='over')
+### Handling unbalanced data: 
+Function : get_sampled_data(Xsm, ysm, seed,type='over')
 
 Function samples the imbalabced dataset to make it balanced. To be called for the training set data 
 Inputs:   
@@ -29,6 +29,27 @@ type - type of sampling, options are
       
 Ouputs:   
 X_rs, y_rs - resampled feature and label data
+
+### Feature selection
+Function: select_fs_alg(fs_alg, X_tr, X_te, y_tr, nof, feats)
+
+Does the feature selection using 3 different algorithms  
+Input:  
+X_tr- training set feature matrix  
+y_tr- training set labels  
+X_te- test set feature matrix  
+nof- number of features to be selected  
+feats- input set feature names  
+fs_alg- Input key for selecting feature selection method. Options are:  
+        - 'rfe': recurcive feature elimination  
+        - 'mrmr': mrmr feature selection
+        - 'anova': anova based feature selection
+
+
+Outputs:  
+X_tr_fs: training matrix after feature selection  
+X_trans : test matrix after feature selection
+mask: feature names of selected features 
 
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
