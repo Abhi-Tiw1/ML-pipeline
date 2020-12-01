@@ -20,11 +20,11 @@ Inputs:
 Xsm - features  to be sampled  
 ysm - corrsponding labels of feature  
 seed - random seed for sampling  
-type - type of sampling, options are
-      - 'under' : random undersampling
-      - 'over' : random oversampling
-      - 'under_nm3' : undersampling using near miss method
-      - 'over_smote' : oversampling using smote method
+type - type of sampling, options are  
+      - 'under' : random undersampling  
+      - 'over' : random oversampling  
+      - 'under_nm3' : undersampling using near miss method  
+      - 'over_smote' : oversampling using smote method  
       
       
 Ouputs:   
