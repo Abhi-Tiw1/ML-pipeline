@@ -12,6 +12,22 @@ Here is a general machine pipeline used in most of my works created using *sciki
 - Feature importance: This can be assessed by looking at most frequenct features in the selected feature set across various cross validation folds. If a feature appreaded as one of the top features in all train-test combinations, it would be a robust feature.
 - Saving performance metrics: The performance metrics are saved for each fold along with random voting performance for each fold and can be used later for significance testing.
 
+## Handling unbalanced data: 
+function : get_sampled_data(Xsm, ysm, seed,type='over')
+
+Function samples the imbalabced dataset to make it balanced. To be called for the training set data 
+Inputs: 
+Xsm - features  to be sampled
+ysm - corrsponding labels of feature
+seed - random seed for sampling
+type - type of sampling, options are
+       - 'under' : random undersampling
+       - 'over' : random oversampling
+       - 'under_nm3' : undersampling using near miss method
+       - 'over_smote' : oversampling using smote method
+Ouputs: 
+X_rs, y_rs - resampled feature and label data
+
 ## Libraries Used
 Apart from scikit-learn the following libraries have been used
 - [pymrmr](https://pypi.org/project/pymrmr/) 
