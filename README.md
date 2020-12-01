@@ -42,13 +42,13 @@ nof- number of features to be selected
 feats- input set feature names  
 fs_alg- Input key for selecting feature selection method. Options are:  
         - 'rfe': recurcive feature elimination  
-        - 'mrmr': mrmr feature selection
+        - 'mrmr': mrmr feature selection  
         - 'anova': anova based feature selection
 
 
 Outputs:  
 X_tr_fs: training matrix after feature selection  
-X_trans : test matrix after feature selection
+X_trans : test matrix after feature selection  
 mask: feature names of selected features 
 
 ## Libraries Used
