@@ -1,0 +1,2 @@
+svm_rbf_bacc,svm_rbf_f1,svm_rbf_mcc,svm_rbf_pre,svm_rbf_rec,svm_rbf_coh,svm_lnr_bacc,svm_lnr_f1,svm_lnr_mcc,svm_lnr_pre,svm_lnr_rec,svm_lnr_coh,rf20_bacc,rf20_f1,rf20_mcc,rf20_pre,rf20_rec,rf20_coh,knn10_bacc,knn10_f1,knn10_mcc,knn10_pre,knn10_rec,knn10_coh,lr_bacc,lr_f1,lr_mcc,lr_pre,lr_rec,lr_coh,bacc_rv,f1_rv,mcc_rv,pre_rv,rec_rv,coh_rv,balance
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.521,0.507,0.044,0.521,0.523,0.043,0.5
